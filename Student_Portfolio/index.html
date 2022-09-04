@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Alexander Magyar</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/styling.css">
+    </head>
+
+    <!--Body-->
+    <body class="background">
+
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About Me</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Get in Touch</a>
+        </div>
+
+        <!--Breaks to add space between navbar and first heading-->
+        <br>
+        <br>
+
+        <!--Background Video-->
+        <div id="Home">
+            <video autoplay muted loop id="Program_Code">
+                <source src="images/video/Program_Code.mp4" type="video/mp4">
+                <!--If video fails to run-->
+                Your Browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video Text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Alexander Magyar's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.
+                    </q>
+                    <br>-Andrew Hunt
+                    <br>
+                    <br>Hi, my name is Alexander Magyar. Welcome to my portfolio website. On it, you can find all about my background and experience.
+                    <br>
+                    <br>Thank you for stopping by!
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="images/code.jpg" alt="codes">
+            </div>
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>About me</h1>
+                <p>
+                    I am a Web Developer/Software Developer who is just starting out in the field and is eager to learn. I have been very close to technology since early childhood so I would happily call this my passion.
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>`s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript.
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub-->
+        <div class="Row" id="GitHub">
+            <!--Left Column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    Feel free to check out my projects on my GitHub page:
+                    <br>
+                    <p class="center"><a href="https://github.com/3nDr0n" target="_blank">3nDr0n GitHub</a></p>
+                </p>
+            </div>
+            <!--Right Column-->
+            <div class="Column_2">
+                <a href="https://github.com/3nDr0n" target="_blank"><img src="images/github.jpg" alt="github logo"></a>
+            </div>
+        </div>
+
+        <!--Contact-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/contact.jpg" alt="contact image">
+            </div>
+            <!--contact form right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data, blank for now-->
+                <form action="https://formspree.io/f/xnqrnady" method="POST"> <!--Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email address">    
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">      
+                </form>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <p>
+                <p class="center">&copy;Alexander Magyar.,<a href="https://github.com/3nDr0n" target="_blank">3nDr0n</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
